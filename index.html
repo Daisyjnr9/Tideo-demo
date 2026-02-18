@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tidio Demo</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#0b0f14;color:#e8eef6}
+    .wrap{max-width:900px;margin:0 auto;padding:56px 20px}
+    .card{background:#121925;border:1px solid #1e2a3a;border-radius:16px;padding:28px}
+    h1{margin:0 0 8px;font-size:34px}
+    p{margin:10px 0 0;line-height:1.55;color:#b8c4d6}
+    .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-block;padding:12px 14px;border-radius:12px;border:1px solid #2a3b53;background:#172235;color:#e8eef6;text-decoration:none}
+    .note{margin-top:18px;font-size:14px;color:#90a3bd}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>FAQ + Lead Capture Chatbot Demo</h1>
+      <p>
+        Click the chat bubble in the bottom corner to test the chatbot.
+        Try: FAQs → questions → then “Speak with a human”.
+      </p>
+
+      <div class="row">
+        <a class="btn" href="#" onclick="if(window.tidioChatApi){window.tidioChatApi.open();} return false;">Open chat</a>
+        <a class="btn" href="#" onclick="if(window.tidioChatApi){window.tidioChatApi.show();} return false;">Show widget</a>
+        <a class="btn" href="#" onclick="if(window.tidioChatApi){window.tidioChatApi.hide();} return false;">Hide widget</a>
+      </div>
+
+      <p class="note">This page is your shareable proof link for clients.</p>
+    </div>
+  </div>
+
+  <!-- ✅ PASTE YOUR TIDIO INSTALL SCRIPT BELOW THIS LINE -->
+  <!-- Example:
+  <script src="//code.tidio.co/XXXXXXXXXXXXXXX.js" async></script>
+  -->
+</body>
+</html>
